@@ -5,7 +5,7 @@ $('ul').on('click', 'li', function () {
 
 // Click on X to delete todos
 $('ul').on('click', 'span', function (e) {
-    $(this).parent().fadeOut(function() {
+    $(this).parent().fadeOut(250, function() {
         $(this).remove();
     });
     e.stopPropagation();
